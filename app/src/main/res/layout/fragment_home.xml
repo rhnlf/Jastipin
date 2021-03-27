@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical"
+    android:background="@color/light_pink">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Aku ingin titip..."
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_chat"
+                android:layout_gravity="center" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_cart"
+                android:layout_gravity="center" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+
+            <ImageButton
+                android:id="@+id/gratis_ongk"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:background="@drawable/jastip_pay"
+                app:cornerRadius="50000dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="81dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/jastippay"
+                android:layout_width="81dp"
+                android:layout_height="21dp"
+                android:text="@string/jastip_pay"
+                android:textAppearance="@style/jastippay"
+                android:gravity="top" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/jastip_pay"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cornerRadius="100dp">
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="scan"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:layout_marginLeft="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="203dp"
+                android:layout_height="25dp"
+                android:gravity="top"
+                android:text="@string/cari_negara"
+                android:textAppearance="@style/cari_berdasarkan" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="95dp"
+                android:gravity="center"
+                android:text="@string/cari"
+                android:textAppearance="@style/cari"
+                app:cornerRadius="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/country1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/jastip_pay"
+                android:layout_marginRight="25dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/country2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/jastip_pay"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/country3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/jastip_pay"
+                android:layout_marginRight="25dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/country4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/jastip_pay"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="13dp"
+                android:text="@string/jepang"
+                android:textAppearance="@style/negara"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:text="@string/korea"
+                android:textAppearance="@style/negara"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="54dp"
+                android:text="@string/thailand"
+                android:textAppearance="@style/negara"
+                android:gravity="top" />
+
+            <TextView
+                android:id="@+id/singapore"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="38dp"
+                android:text="@string/singapura"
+                android:textAppearance="@style/negara"
+                android:gravity="top" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_height="25dp"
+                android:text="@string/cari_traveler"
+                android:textAppearance="@style/cari_berdasarkan"
+                android:gravity="top" />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="92dp"
+                android:gravity="center"
+                android:text="@string/cari"
+                android:textAppearance="@style/cari"
+                app:cornerRadius="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/default_profile"/>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="top"
+                        android:text="@string/sam"
+                        android:textAppearance="@style/nama" />
+
+                    <TextView
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="@string/jepang"
+                        android:textAppearance="@style/negara" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow"
+                    app:cornerRadius="100dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/default_profile"/>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="top"
+                        android:text="@string/andrew"
+                        android:textAppearance="@style/nama" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="@string/singapura"
+                        android:textAppearance="@style/negara" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow"
+                    app:cornerRadius="100dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/default_profile"/>
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:gravity="top"
+                        android:text="@string/josh"
+                        android:textAppearance="@style/nama" />
+
+                    <TextView
+                        android:layout_width="53dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:text="@string/korea"
+                        android:textAppearance="@style/negara" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow"
+                    app:cornerRadius="100dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="@string/trending_request"
+            android:textAppearance="@style/cari_berdasarkan"
+            android:gravity="top" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/lihat_semua"
+                android:textAppearance="@style/cari"
+                android:gravity="right|end"
+                app:cornerRadius="100dp"
+                android:layout_marginLeft="120dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="200dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:background="@drawable/oleh1"/>
+
+            <ImageButton
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/oleh1"/>
+
+            <ImageButton
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/oleh1"/>
+
+            <ImageButton
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/oleh1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

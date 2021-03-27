@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activity.LoginActivity"
+android:background="@color/orange">
+
+    <TextView
+        android:id="@+id/jastip_in"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="99dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="195dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="99dp"
+        android:text="@string/jastip_in"
+        android:textAppearance="@style/jastip_in"
+        android:gravity="center_horizontal|top" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginRight="35dp"
+        android:elevation="4dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/dark_orange"
+        app:cornerRadius="5000dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/button_signin"
+        android:layout_width="290dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="542dp"
+        android:layout_marginRight="35dp"
+        android:elevation="4dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:cornerRadius="5000dp"/>
+
+</RelativeLayout>
