@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.example.jastipin.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     private Button buttonSignup;
     private Button buttonSignin;
@@ -18,10 +18,24 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        findView();
+        initView();
+        initListener();
+    }
 
+    @Override
+    public void findView() {
         buttonSignin = findViewById(R.id.button_signin);
         buttonSignup = findViewById(R.id.button_signup);
+    }
 
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initListener() {
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +43,6 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         buttonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

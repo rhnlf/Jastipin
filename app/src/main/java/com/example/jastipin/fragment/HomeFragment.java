@@ -5,24 +5,49 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.jastipin.R;
-import com.example.jastipin.viewmodel.HomeViewModel;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment {
 
-    private HomeViewModel homeViewModel;
+    public static HomeFragment newInstance() {
+        HomeFragment fragment = new HomeFragment();
+        return fragment;
+    }
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        return root;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        findView(view);
+        initView(view);
+        initListener(view);
+        return view;
+    }
+
+    @Override
+    public void findView(View view) {
+
+    }
+
+    @Override
+    public void initView(View view) {
+
+    }
+
+    @Override
+    public void initListener(View view) {
+
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
     }
 }

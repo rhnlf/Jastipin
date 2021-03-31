@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
         import com.example.jastipin.MainActivity;
         import com.example.jastipin.R;
 
-public class SignUpActivity extends AppCompatActivity {
+public class SignUpActivity extends BaseActivity {
 
     private Button buttonRegister;
 
@@ -18,9 +18,23 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        findView();
+        initView();
+        initListener();
+    }
 
+    @Override
+    public void findView() {
         buttonRegister = findViewById(R.id.button_register);
+    }
 
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initListener() {
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
