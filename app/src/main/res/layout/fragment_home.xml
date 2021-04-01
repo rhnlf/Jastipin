@@ -42,8 +42,6 @@
                 android:background="@drawable/ic_cart"
                 android:layout_gravity="center" />
 
-
-
         </LinearLayout>
 
         <LinearLayout

@@ -2,7 +2,7 @@
     <string name="app_name">Jastip.in</string>
     <string name="title_activity_navigation">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_post">Post</string>
+    <string name="title_post">New Post</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
@@ -31,4 +31,9 @@
     <string name="sam">Sam</string>
     <string name="andrew">Andrew</string>
     <string name="josh">Josh</string>
+    <string name="jadwal_travel">Jadwal Travel</string>
+    <string name="request_barang">Request Barang</string>
+    <string name="jual_barang">Jual Barang</string>
+    <string name="titip_traveler">Titip Ke Traveler</string>
+    <string name="post">Post</string>
 </resources>

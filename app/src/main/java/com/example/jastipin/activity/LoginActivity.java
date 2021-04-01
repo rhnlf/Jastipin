@@ -25,8 +25,8 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void findView() {
-        buttonSignin = findViewById(R.id.button_signin);
         buttonSignup = findViewById(R.id.button_signup);
+        buttonSignin = findViewById(R.id.button_signin);
     }
 
     @Override
@@ -43,6 +43,7 @@ public class LoginActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
         buttonSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

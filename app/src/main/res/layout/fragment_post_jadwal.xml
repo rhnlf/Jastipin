@@ -8,7 +8,7 @@
     android:background="@color/orange">
 
     <LinearLayout
-        android:id="@+id/postLayout"
+        android:id="@+id/jadwalLayout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -19,11 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-        
+
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
-                android:text="@string/title_post"
+                android:text="@string/jadwal_travel"
                 android:layout_marginLeft="15dp"
                 android:textAppearance="@style/title"
                 android:gravity="center_vertical">
@@ -48,56 +48,56 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/postLayout"
+        android:layout_below="@+id/jadwalLayout"
         android:orientation="vertical"
         android:background="@color/white">
 
-        <Button
-            android:id="@+id/button_jadwalTravel"
+        <EditText
+            android:id="@+id/txt_asalNegara"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginRight="35dp"
-            app:cornerRadius="10dp"
-            android:text="@string/jadwal_travel">
-
-        </Button>
-
-        <Button
-            android:id="@+id/button_requestBarang"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/request_barang">
-        </Button>
+            android:layout_marginTop="100dp"
+            android:hint="Username" />
 
-        <Button
-            android:id="@+id/button_jualBarang"
+        <EditText
+            android:id="@+id/txt_negaraTujuan"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/jual_barang">
-        </Button>
+            android:layout_marginTop="40dp"
+            android:hint="Username" />
 
-        <Button
-            android:id="@+id/button_titipTraveller"
+        <EditText
+            android:id="@+id/txt_tanggalKembali"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/titip_traveler">
-        </Button>
+            android:layout_marginTop="40dp"
+            android:hint="Username" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:elevation="4dp"
+            app:cornerRadius="5000dp"
+            android:text="@string/post"/>
 
     </LinearLayout>
-
 
 </RelativeLayout>
