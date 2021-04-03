@@ -74,6 +74,16 @@ public class NotificationsFragment extends BaseFragment {
         notificationsArrayList.add(new Notifications("Josh", "Merequest barang titipan"));
         notificationsArrayList.add(new Notifications("Smith", "Jajang"));
         notificationsArrayList.add(new Notifications("Gabriel", "Mulai mengikutimu"));
+        notificationsArrayList.add(new Notifications("Sam", "Mulai mengikutimu"));
+        notificationsArrayList.add(new Notifications("Jessica", "Merequest barang titipan"));
+        notificationsArrayList.add(new Notifications("Ron", "Mulai mengikutimu"));
+        notificationsArrayList.add(new Notifications("Nina", "Merequest barang titipan"));
+        notificationsArrayList.add(new Notifications("Ann", "Merequest barang titipan"));
+        notificationsArrayList.add(new Notifications("Andrew", "Mulai mengikutimu"));
+        notificationsArrayList.add(new Notifications("David", "Mulai mengikutimu"));
+        notificationsArrayList.add(new Notifications("Josh", "Merequest barang titipan"));
+        notificationsArrayList.add(new Notifications("Smith", "Jajang"));
+        notificationsArrayList.add(new Notifications("Gabriel", "Mulai mengikutimu"));
     }
 
     @Override

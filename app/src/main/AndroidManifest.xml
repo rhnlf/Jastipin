@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jastipin.NoActionBar">
-        <activity android:name=".activity.NotificationsActivity"/>
+        <activity android:name=".activity.NotificationsActivity" />
         <activity android:name=".activity.SignInActivity" />
         <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.PostJadwalActivity"/>
+        <activity android:name=".activity.PostActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_navigation" />
