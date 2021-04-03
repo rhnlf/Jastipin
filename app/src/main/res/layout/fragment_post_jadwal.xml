@@ -61,7 +61,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="100dp"
-            android:hint="Username" />
+            android:hint="Asal Negara" />
 
         <EditText
             android:id="@+id/txt_negaraTujuan"
@@ -72,7 +72,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="40dp"
-            android:hint="Username" />
+            android:hint="Negara Tujuan" />
 
         <EditText
             android:id="@+id/txt_tanggalKembali"
@@ -83,10 +83,10 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="40dp"
-            android:hint="Username" />
+            android:hint="Tanggal Kembali" />
 
         <Button
-            android:id="@+id/button_login"
+            android:id="@+id/button_post"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"

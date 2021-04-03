@@ -52,15 +52,15 @@
 
         <TextView
             android:id="@+id/email_address"
-            android:layout_width="98dp"
+            android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="35dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="25dp"
-            android:text="@string/email_adres"
+            android:text="@string/email_address_cap"
             android:textAppearance="@style/email_adres"
-            android:gravity="center_horizontal|top" />
+            android:gravity="left" />
 
         <EditText
             android:id="@+id/txt_email"
@@ -70,20 +70,20 @@
             android:layout_marginLeft="35dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="35dp"
-            android:hint="@string/email_adres"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress"/>
 
         <TextView
             android:id="@+id/password"
-            android:layout_width="75dp"
-            android:layout_height="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="35dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="29dp"
-            android:text="@string/password"
+            android:text="@string/password_cap"
             android:textAppearance="@style/password"
-            android:gravity="center_horizontal|top" />
+            android:gravity="left" />
 
         <EditText
             android:id="@+id/txt_password"
@@ -99,14 +99,14 @@
         <TextView
             android:id="@+id/confirm_password"
             android:layout_width="wrap_content"
-            android:layout_height="16dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="35dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="29dp"
-            android:text="@string/confirm_password"
+            android:text="@string/confirm_password_cap"
             android:textAppearance="@style/password"
-            android:gravity="center_horizontal|top" />
+            android:gravity="left" />
 
         <EditText
             android:id="@+id/txt_confirm_password"

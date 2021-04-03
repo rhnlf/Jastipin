@@ -35,8 +35,10 @@ android:background="@color/orange">
         android:layout_marginRight="35dp"
         android:elevation="4dp"
         android:text="@string/sign_up"
-        android:textColor="@color/white"
-        app:cornerRadius="5000dp"></Button>
+        android:textColor="@color/dark_orange"
+        app:cornerRadius="5000dp"
+        android:backgroundTint="@color/white">
+    </Button>
 
     <Button
         android:id="@+id/button_signin"
