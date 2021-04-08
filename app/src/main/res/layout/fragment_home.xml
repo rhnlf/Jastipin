@@ -162,7 +162,7 @@
                     android:id="@+id/country1"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/jastip_pay"/>
+                    android:src="@drawable/flag_japan"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -185,7 +185,7 @@
                     android:id="@+id/country2"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/jastip_pay"/>
+                    android:src="@drawable/flag_skorea"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -208,7 +208,7 @@
                     android:id="@+id/country3"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/jastip_pay"/>
+                    android:src="@drawable/flag_thailand"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -230,7 +230,7 @@
                     android:id="@+id/country4"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/jastip_pay"/>
+                    android:src="@drawable/flag_singapore"/>
 
                 <TextView
                     android:layout_width="match_parent"

@@ -40,6 +40,13 @@
     <string name="jadwal_travel">Jadwal Travel</string>
     <string name="request_barang">Request Barang</string>
     <string name="jual_barang">Jual Barang</string>
-    <string name="titip_traveler">Titip Ke Traveler</string>
+    <string name="titip_traveler">Titip Ke Traveller</string>
     <string name="post">Post</string>
+    <string name="title_activity_request">RequestActivity</string>
+    <string name="david_nelson">David Nelson</string>
+    <string name="malang">Malang</string>
+    <string name="bali">Bali</string>
+    <string name="asal">Asal</string>
+    <string name="tujuan">Tujuan Travelling</string>
+    <string name="kirim_pesan_pribadi">Kirim Pesan Pribadi</string>
 </resources>

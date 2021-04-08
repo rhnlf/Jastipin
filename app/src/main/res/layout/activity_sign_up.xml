@@ -13,19 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="39dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
-        <TextView
+        <ImageView
             android:id="@+id/jastip_in"
-            android:layout_width="162dp"
-            android:layout_height="42dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="121dp"
-            android:layout_marginRight="121dp"
-            android:gravity="center"
-            android:text="@string/jastip_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_jastip1"
             android:textAppearance="@style/jastip_in" />
 
     </LinearLayout>
@@ -151,22 +146,22 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/button_googleLogin"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginRight="45dp"
-                app:cornerRadius="5000dp"
-                android:textColor="#ffffff"
-                android:background="@drawable/ic_google"/>
-
-            <ImageButton
                 android:id="@+id/button_instaLogin"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginRight="45dp"
                 app:cornerRadius="5000dp"
                 android:textColor="#ffffff"
-                android:background="@drawable/ic_google"/>
+                android:background="@drawable/logo_instagram"/>
+
+            <ImageButton
+                android:id="@+id/button_googleLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="45dp"
+                app:cornerRadius="5000dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/logo_google"/>
 
             <ImageButton
                 android:id="@+id/button_fbLogin"
@@ -174,7 +169,7 @@
                 android:layout_height="60dp"
                 app:cornerRadius="5000dp"
                 android:textColor="#ffffff"
-                android:background="@drawable/ic_google"/>
+                android:background="@drawable/logo_facebook"/>
 
         </LinearLayout>
     </LinearLayout>

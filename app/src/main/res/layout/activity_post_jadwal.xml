@@ -58,36 +58,71 @@
         android:orientation="vertical"
         android:background="@color/white">
 
-        <EditText
-            android:id="@+id/txt_asalNegara"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="100dp"
-            android:hint="Asal Negara" />
+            app:cardCornerRadius="10dp">
 
-        <EditText
-            android:id="@+id/txt_negaraTujuan"
+            <EditText
+                android:id="@+id/txt_asalNegara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Asal Negara"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/orange" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="40dp"
-            android:hint="Negara Tujuan" />
+            app:cardCornerRadius="10dp">
 
-        <EditText
-            android:id="@+id/txt_tanggalKembali"
+            <EditText
+                android:id="@+id/txt_negaraTujuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Negara Tujuan"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/orange" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="40dp"
-            android:hint="Tanggal Kembali" />
+            app:cardCornerRadius="10dp">
+
+            <EditText
+                android:id="@+id/txt_tanggalKembali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal Kembali"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/orange" />
+
+        </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/button_post"

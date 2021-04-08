@@ -35,7 +35,6 @@ public class NotificationsFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_notifications, container, false);
-
         getData();
         findView(view);
         initView(view);

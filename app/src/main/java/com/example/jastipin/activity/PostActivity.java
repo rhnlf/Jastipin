@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.jastipin.R;
-import com.example.jastipin.fragment.NotificationsFragment;
 
 public class PostActivity extends BaseActivity {
 
@@ -42,7 +41,15 @@ public class PostActivity extends BaseActivity {
         buttonJadwalTravel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PostActivity.this, PostJadwalActivity.class);
+                Intent intent = new Intent(com.example.jastipin.activity.PostActivity.this, PostJadwalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonRequestBarang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(com.example.jastipin.activity.PostActivity.this, RequestBarangActivity.class);
                 startActivity(intent);
             }
         });

@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.PostActivity"
+    tools:context=".activity.RequestBarangActivity"
     android:background="@color/orange">
 
     <LinearLayout
-        android:id="@+id/postLayout"
+        android:id="@+id/requestLayout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
-                android:text="@string/title_post"
+                android:text="@string/request_barang"
                 android:textAppearance="@style/title"
                 android:gravity="center_vertical">
             </TextView>
@@ -32,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="right">
+
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
@@ -44,7 +45,9 @@
                     android:layout_marginLeft="25dp"
                     android:background="@drawable/ic_cart"
                     android:layout_gravity="center" />
+
             </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
@@ -52,54 +55,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/postLayout"
-        android:orientation="vertical"
+        android:layout_below="@+id/requestLayout"
+        android:orientation="horizontal"
         android:background="@color/white">
 
-        <Button
-            android:id="@+id/button_jadwalTravel"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginRight="35dp"
-            app:cornerRadius="10dp"
-            android:text="@string/jadwal_travel">
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/dark_orange"
+            android:background="@color/white"/>
 
-        </Button>
-
-        <Button
-            android:id="@+id/button_requestBarang"
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/request_barang">
-        </Button>
-
-        <Button
-            android:id="@+id/button_jualBarang"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/jual_barang">
-        </Button>
-
-        <Button
-            android:id="@+id/button_titipTraveller"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="30dp"
-            app:cornerRadius="10dp"
-            android:text="@string/titip_traveler">
-        </Button>
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
