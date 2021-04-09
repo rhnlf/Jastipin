@@ -1,31 +1,32 @@
 package com.example.jastipin.activity;
 
+import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
 import com.example.jastipin.R;
 import com.example.jastipin.adapter.JualPagerAdapter;
-import com.example.jastipin.adapter.RequestPagerAdapter;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
-public class RequestBarangActivity extends BaseActivity {
+public class JualBarangActivity extends BaseActivity {
 
     private TabLayout tabLayout;
-    private TabItem tabBarangRequest;
-    private TabItem tabNegaraRequest;
+    private TabItem tabBarangJual;
+    private TabItem tabNegaraJual;
+    private TabItem tabHargaJual;
     private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_request_barang);
+        setContentView(R.layout.activity_jual_barang);
         findView();
         initView();
         initListener();
 
-        RequestPagerAdapter pagerAdapter = new RequestPagerAdapter(getSupportFragmentManager(),
+        JualPagerAdapter pagerAdapter = new JualPagerAdapter(getSupportFragmentManager(),
                 tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
 
@@ -49,10 +50,11 @@ public class RequestBarangActivity extends BaseActivity {
 
     @Override
     public void findView() {
-        tabLayout = findViewById(R.id.tabBarRequest);
-        tabBarangRequest = findViewById(R.id.tabBarangRequest);
-        tabNegaraRequest = findViewById(R.id.tabNegaraRequest);
-        viewPager = findViewById(R.id.viewPagerRequest);
+        tabLayout = findViewById(R.id.tabBarJual);
+        tabBarangJual = findViewById(R.id.tabBarangJual);
+        tabNegaraJual = findViewById(R.id.tabNegaraJual);
+        tabHargaJual = findViewById(R.id.tabHargaJual);
+        viewPager = findViewById(R.id.viewPagerJual);
     }
 
     @Override
@@ -62,6 +64,5 @@ public class RequestBarangActivity extends BaseActivity {
 
     @Override
     public void initListener() {
-
     }
 }

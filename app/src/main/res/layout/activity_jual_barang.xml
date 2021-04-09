@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.RequestBarangActivity"
+    tools:context=".activity.JualBarangActivity"
     android:background="@color/white">
 
     <LinearLayout
-        android:id="@+id/requestLayout"
+        android:id="@+id/jualLayout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
-                android:text="@string/request_barang"
+                android:text="@string/jual_barang"
                 android:textAppearance="@style/title"
                 android:gravity="center_vertical">
             </TextView>
@@ -56,36 +56,44 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/requestLayout"
+        android:layout_below="@+id/jualLayout"
         android:orientation="vertical"
         android:background="@color/white">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabBarRequest"
+            android:id="@+id/tabBarJual"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="top">
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/tabBarangRequest"
+                android:id="@+id/tabBarangJual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/detail_barang" />
 
             <com.google.android.material.tabs.TabItem
-                android:id="@+id/tabNegaraRequest"
+                android:id="@+id/tabNegaraJual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/detail_negara" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabHargaJual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_harga" />
         </com.google.android.material.tabs.TabLayout>
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPagerRequest"
+            android:id="@+id/viewPagerJual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
         </androidx.viewpager.widget.ViewPager>
 
     </LinearLayout>
+
+
 
 </RelativeLayout>

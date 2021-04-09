@@ -1,10 +1,13 @@
 package com.example.jastipin.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 
 import com.example.jastipin.R;
+import com.example.jastipin.fragment.PostFragment;
+import com.example.jastipin.fragment.ProfileFragment;
 
 public class ProfileActivity extends BaseActivity {
 
@@ -15,6 +18,10 @@ public class ProfileActivity extends BaseActivity {
         findView();
         initView();
         initListener();
+
+        ProfileFragment fragment = new ProfileFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        fm.beginTransaction().add(R.id.profileFragment, fragment).commit();
     }
 
     @Override

@@ -49,4 +49,26 @@
     <string name="asal">Asal</string>
     <string name="tujuan">Tujuan Travelling</string>
     <string name="kirim_pesan_pribadi">Kirim Pesan Pribadi</string>
+    <string name="upload_gambar">Upload Gambar</string>
+    <string name="detail">Detail</string>
+    <string name="pie_susu">Pie Susu Dhian</string>
+    <string name="deskripsi_produk">Deskripsi Produk</string>
+    <string name="varian_original">Varian Original</string>
+    <string name="tujuan_pengiriman">Tujuan Pengiriman</string>
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="kota_kabupaten">Kota/Kabupaten</string>
+    <string name="malang_jawatimur">Malang, Jawa Timur</string>
+    <string name="kota_malang">Kota Malang</string>
+    <string name="titip">Titip</string>
+    <string name="detail_barang">Detail Barang</string>
+    <string name="detail_negara">Detail Negara</string>
+    <string name="detail_harga">Detail Harga</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string-array name="spinner">
+        <item>Makanan</item>
+        <item>Minuman</item>
+        <item>Pakaian</item>
+        <item>Pernak-pernik</item>
+        <item>Lain-lain</item>
+    </string-array>
 </resources>

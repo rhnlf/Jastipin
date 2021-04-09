@@ -1,28 +1,27 @@
 package com.example.jastipin.activity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.os.Bundle;
+
 import com.example.jastipin.R;
+import com.example.jastipin.fragment.HomeFragment;
 import com.example.jastipin.fragment.PostFragment;
 
-public class PostActivity extends BaseActivity {
+public class HomeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post);
+        setContentView(R.layout.activity_home);
         findView();
         initView();
         initListener();
 
-        PostFragment fragment = new PostFragment();
+        HomeFragment fragment = new HomeFragment();
         FragmentManager fm = getSupportFragmentManager();
-        fm.beginTransaction().add(R.id.postFragment, fragment).commit();
+        fm.beginTransaction().add(R.id.homeFragment, fragment).commit();
     }
 
     @Override

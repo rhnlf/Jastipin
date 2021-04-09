@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jastipin.NoActionBar">
-        <activity android:name=".activity.TitipTravellerActivity"></activity>
+        <activity android:name=".activity.JualBarangActivity"></activity>
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.TitipTravellerActivity" />
         <activity android:name=".activity.RequestBarangActivity" />
         <activity android:name=".activity.ProfileActivity" />
         <activity android:name=".activity.PostActivity" />

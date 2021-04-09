@@ -5,6 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context=".fragment.HomeFragment"
+    android:id="@+id/homeFragment"
     android:orientation="vertical"
     android:background="@color/light_pink">
 
@@ -135,6 +136,7 @@
                 android:layout_height="match_parent"
                 android:gravity="right">
                 <Button
+                    android:id="@+id/button_carinegara"
                     android:layout_width="65dp"
                     android:layout_height="40dp"
                     android:text="@string/cari"
@@ -264,6 +266,7 @@
                 android:layout_height="match_parent"
                 android:gravity="right">
                 <Button
+                    android:id="@+id/button_caritraveller"
                     android:layout_width="65dp"
                     android:layout_height="40dp"
                     android:layout_alignParentLeft="true"
@@ -319,6 +322,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/button_titip1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="15dp"
@@ -373,6 +377,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/button_titip2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="15dp"
@@ -427,6 +432,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/button_titip3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="15dp"
@@ -458,6 +464,7 @@
                 android:layout_height="match_parent"
                 android:gravity="right">
                 <Button
+                    android:id="@+id/button_trendingrequest"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="@string/lihat_semua"

@@ -74,9 +74,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Asal Negara"
+                android:textColorHint="@color/grey"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:backgroundTint="@color/orange" />
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -96,9 +98,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Negara Tujuan"
+                android:textColorHint="@color/grey"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:backgroundTint="@color/orange" />
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/black"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -118,6 +122,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tanggal Kembali"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="@color/orange" />
